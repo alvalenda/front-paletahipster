@@ -1,4 +1,3 @@
-import { Helloworld } from './components/Helloworld/Helloworld'
 import { Home } from './components/Home'
 
 function App() {

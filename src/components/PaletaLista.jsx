@@ -6,7 +6,7 @@ export const PaletaLista = () => {
     <div className='PaletaLista'>
       {paletas.map((paleta, index) => {
         return (
-          <div className='PaletaListaItem'>
+          <div className='PaletaListaItem' key={`PaletaListaItem-${index}`}>
             <div>
               <div className='PaletaListaItem__titulo'>{paleta.titulo}</div>
               <div className='PaletaListaItem__preco'>
@@ -24,7 +24,7 @@ export const PaletaLista = () => {
             <img
               className='PaletaListaItem__foto'
               src={paleta.foto}
-              alt={paleta.titulo}
+              alt={`Paleta de ${paleta.sabor}`}
             />
           </div>
         )
