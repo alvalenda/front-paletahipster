@@ -1,3 +1,5 @@
+import './PaletaItem.css'
+
 export function PaletaItem({ paleta }) {
   return (
     <div className='PaletaListaItem'>
