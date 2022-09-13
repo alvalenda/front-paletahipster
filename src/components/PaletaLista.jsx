@@ -6,7 +6,7 @@ export const PaletaLista = () => {
   return (
     <div className='PaletaLista'>
       {paletas.map((paleta, index) => {
-        return <PaletaItem key={index} paleta={paleta} />
+        return <PaletaItem key={`PaletaListaItem-${index}`} paleta={paleta} />
       })}
     </div>
   )
